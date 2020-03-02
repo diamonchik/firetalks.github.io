@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+		<script src="preloader.js"></script>
+		<link rel="stylesheet"  href="preloader.css">
+	<title>FireTalks</title>
+	<script >
+$(".ripple").on("click", function(event){
+$(this).append("<span class='ripple-effect'>");
+$(this).find(".ripple-effect").css({
+   left:event.pageX-$(this).position().left,
+    top:event.pageY-$(this).position().top
+  }).animate({
+    opacity: 0,
+  }, 1500, function() {
+   $(this).remove();
+  });
+});
+	</script>
+</head>
+<body>
+	<div id="page-preloader" class="preloader">
+		<img src="logo.gif" class="pre">
+	</div>
+	<div id="header">
+		<div class="menu">
+			<a href="index.html"><p1>Головна</p1></a>
+			<a href="contact.html"><p3>Контакти</p3></a>
+		</div>	
+		<img src="logo.png" class="logo">
+	</div>
+	<div id="header_mb">
+		<div class="menu">
+			<a href="index.html"><p1>Головна</p1></a>
+			<a href="contact.html"><p3>Контакти</p3></a>
+		</div>	
+		<img src="logo_mb.png" class="logo">
+	</div>	
+	<div id="content">
+		<br><br><br><br><br>
+		<a href="#" class="ripple btn">Анкета Учасника FireTalks 6.0</a><br>
+		<a href="#" class="ripple btn">Телеграм-канал</a><br>
+		<a href="#" class="ripple btn">Анкета для спікерів</a><br>
+		<a href="#" class="ripple btn">Фейсбук</a><br>
+	</div>
+	<div id="footer">
+		<p1>COPYRIGHT 2020. ALL RIGHTS ARE RESERVED.</p1><br>
+		<p1>Powered by Spectrum studios</p1>
+	</div>
+</body>
+</html>
